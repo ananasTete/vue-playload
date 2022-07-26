@@ -10,6 +10,11 @@ const routes = [
     name: "home",
     component: HomeView,
   },
+  {
+    path: "/navbar-test",
+    name: "navbar-test",
+    component: () => import("../components/Global/GlobalNavbar/test"),
+  },
 ];
 
 const router = new VueRouter({
